@@ -1,14 +1,26 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#101e38">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#1f0b3b">
 <title>دعوة حفل تخرّج ديمة 🎓</title>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Mirza:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Katibeh&family=Lateef&family=Rakkas&family=Reem+Kufi:wght@400;700&family=Scheherazade+New:wght@400;700&family=Markazi+Text:wght@400;700&family=Zain:wght@400;700;800&family=El+Messiri:wght@400;700&family=Changa:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#101e38;--navy2:#213a61;--gold:#b99d6b;--paper:#f6f0e4;--ink:#17233b;--rose:#a35f6e;
+:root{--navy:#1f0b3b;--navy2:#40206a;--gold:#b99d6b;--paper:#f6f0e4;--ink:#1f0b3b;--rose:#ba90fc;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *{box-sizing:border-box}html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;min-height:100%;background:radial-gradient(circle at 15% 10%,#2b4266,transparent 48%),radial-gradient(circle at 85% 95%,#071124,transparent 50%),var(--navy);font-family:Cairo,system-ui,sans-serif;color:var(--ink)}
+body{margin:0;min-height:100%;background:
+ radial-gradient(ellipse at 4% 14%,rgba(170,185,206,.17) 0%,transparent 21%),
+ radial-gradient(ellipse at 95% 81%,rgba(142,165,193,.12) 0%,transparent 22%),
+ radial-gradient(ellipse at 48% 43%,rgba(43,66,96,.46) 0%,transparent 66%),
+ radial-gradient(ellipse at 50% 55%,#493071 0%,#2e1554 52%,#16072d 100%);
+ background-attachment:fixed;font-family:Cairo,system-ui,sans-serif;color:var(--ink)}
+/* Deep navy, softly lit fabric-like background inspired by the reference */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.3;background:
+ repeating-linear-gradient(128deg,transparent 0px,transparent 3px,rgba(255,255,255,.018) 4px,transparent 5px),
+ radial-gradient(circle at 9% 7%,rgba(242,229,212,.2) 0 2px,transparent 14px),
+ radial-gradient(circle at 93% 76%,rgba(242,229,212,.18) 0 3px,transparent 19px)}
+main{position:relative;z-index:1}
 button,a{font:inherit}
 .defs{position:absolute;width:0;height:0}
 .screen{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;transition:transform .9s cubic-bezier(.7,0,.2,1),opacity .65s}
@@ -29,7 +41,7 @@ button,a{font:inherit}
 .flap-shape svg{position:absolute;inset:0;width:100%;height:100%}
 .preview{position:absolute;inset:15px 22px 30px;background:var(--grain),linear-gradient(var(--paper),var(--paper));z-index:2;display:grid;place-content:center;text-align:center;box-shadow:0 3px 10px #0002;transition:transform .8s .3s}
 .preview strong{font-family:'Aref Ruqaa',serif;font-size:34px;color:var(--rose)}
-.seal{position:absolute;z-index:6;top:54%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#33496f,#101e38 62%);border:3px double var(--gold);display:grid;place-items:center;color:#e8d3a0;box-shadow:0 4px 8px rgba(0,0,0,.45),inset 0 1px 2px rgba(255,255,255,.25);transition:opacity .3s}
+.seal{position:absolute;z-index:6;top:54%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#6841a3,#1f0b3b 62%);border:3px double var(--gold);display:grid;place-items:center;color:#e8d3a0;box-shadow:0 4px 8px rgba(0,0,0,.45),inset 0 1px 2px rgba(255,255,255,.25);transition:opacity .3s}
 .seal svg{width:30px;height:30px}
 .envelope.is-opening .env-flap{transform:rotateX(180deg);z-index:1}
 .envelope.is-opening .preview{transform:translateY(-130px)}
@@ -44,41 +56,53 @@ button,a{font:inherit}
 .paper .tl{top:0;left:0}.paper .tr{top:0;right:0;transform:scaleX(-1)}
 .paper .bl{bottom:0;left:0;transform:scaleY(-1)}.paper .br{bottom:0;right:0;transform:scale(-1,-1)}
 .paper>*:not(.fl){position:relative;z-index:1}
-.poem{font-family:Amiri,serif;color:var(--navy);font-size:clamp(17px,4.6vw,21px);line-height:1.9}
+.poem{font-family:'Katibeh',serif;color:var(--navy);font-size:clamp(17px,4.6vw,21px);line-height:1.9}
 .poem p{margin:0}
+.poem{margin-bottom:0}
+.gold-divider{width:min(64%,185px);margin:12px auto 17px;height:23px;display:flex;align-items:center;justify-content:center}
+.gold-divider svg{display:block;width:100%;height:auto;max-height:23px}
 .orn{display:flex;align-items:center;gap:8px;justify-content:center;color:var(--rose);margin:14px 0}
 .orn:before,.orn:after{content:"";height:1px;width:70px;background:var(--rose);opacity:.6}
-.intro{font-family:Amiri,serif;font-size:clamp(19px,5vw,23px);line-height:1.8;color:var(--navy);margin:0}
+.intro{font-family:'El Messiri',serif;font-size:clamp(18px,4.7vw,21px);line-height:1.8;color:var(--navy);margin:0}
 .nameRow{display:flex;align-items:center;justify-content:center;gap:6px;margin:4px 0 0}
 .nameRow svg{width:78px;height:62px;color:#16161d}
-.name{font-family:'Aref Ruqaa',serif;font-size:clamp(58px,17vw,80px);line-height:1.3;color:var(--rose);margin:0}
-.blessing{font-family:Amiri,serif;font-size:20px;margin:0 0 14px;color:var(--navy)}
+.name{font-family:'Zain',Amiri,serif;font-weight:700;font-size:clamp(76px,21vw,106px);line-height:1.25;color:var(--rose);margin:0;letter-spacing:0}
+.blessing{font-family:'Katibeh',serif;font-size:20px;margin:24px 0 14px;color:var(--navy)}
 .photo{display:none;width:130px;height:130px;border-radius:50%;border:1px solid var(--gold);padding:5px;margin:0 auto 16px}
 .photo div{width:100%;height:100%;border-radius:50%;background:center/cover no-repeat}
 .info{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:6px}
-.col{padding:4px 6px;font-family:Amiri,serif;font-size:clamp(15px,4vw,18px);line-height:1.6;color:var(--navy)}
-.col+.col{border-inline-start:1px solid var(--rose)}
+.col{padding:4px 6px;font-family:'Zain',serif;font-size:clamp(14px,3.7vw,16px);line-height:1.6;color:var(--navy)}
+.col+.col{position:relative}
+.col+.col::before{content:"";position:absolute;inset-inline-start:0;top:16%;height:68%;border-inline-start:1px solid var(--rose)}
 .col svg{width:30px;height:30px;color:var(--rose);display:block;margin:0 auto 6px}
 .actions{display:grid;gap:10px;margin-top:26px}
-.btn{display:block;border:1px solid var(--navy);background:var(--navy);color:#fff;padding:13px 15px;text-decoration:none;cursor:pointer;font-weight:700;font-size:14px;border-radius:2px}
+.btn{font-family:'Zain',sans-serif;display:block;width:fit-content;max-width:100%;margin-inline:auto;border:1px solid var(--navy);background:var(--navy);color:#fff;padding:10px 18px;text-decoration:none;cursor:pointer;font-weight:700;font-size:13px;border-radius:2px;transition:background .2s}.btn:hover{background:var(--navy2)}
 .btn.alt{background:transparent;color:var(--navy)}
 .note{color:#766e64;font-size:12px;margin:12px 0 0}
 .back{background:none;border:0;color:var(--navy);margin-top:12px;text-decoration:underline;cursor:pointer;font-size:13px}
 .envelope:focus-visible,.btn:focus-visible,.back:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* لوحة تجريب الخطوط: للمعاينة فقط */
 </style>
 </head>
 <body>
 <svg class="defs" aria-hidden="true"><defs>
-<symbol id="rose" viewBox="-30 -30 60 60"><circle r="28" fill="#f5dcd7"/><circle r="21" fill="#efc7c4"/><circle r="14" fill="#e6adae"/><circle r="7" fill="#d98f95"/><path d="M-20 -6Q0 -24 20 -6M-14 8Q0 22 14 8M-6 -14Q8 -4 -2 6" fill="none" stroke="#c97b84" stroke-width="1.2"/></symbol>
-<symbol id="bud" viewBox="-10 -10 20 20"><circle r="9" fill="#fbf1ea"/><circle r="3.5" fill="#e9a9b0"/></symbol>
+<symbol id="rose" viewBox="-30 -30 60 60"><circle r="28" fill="#f6eeff"/><circle r="21" fill="#f0e5ff"/><circle r="14" fill="#e2cefd"/><circle r="7" fill="#ba90fc"/><path d="M-20 -6Q0 -24 20 -6M-14 8Q0 22 14 8M-6 -14Q8 -4 -2 6" fill="none" stroke="#9a6bd7" stroke-width="1.2"/></symbol>
+<symbol id="bud" viewBox="-10 -10 20 20"><circle r="9" fill="#f9f5fd"/><circle r="3.5" fill="#ba90fc"/></symbol>
 <symbol id="corner" viewBox="0 0 200 200">
-<g stroke="#7f9370" stroke-width="1.5" fill="none"><path d="M0 70C50 60 90 90 130 150M70 0C80 40 120 70 175 80M0 150C30 140 50 150 70 185"/></g>
-<g fill="#8fa07a"><ellipse cx="95" cy="30" rx="26" ry="9" transform="rotate(35 95 30)"/><ellipse cx="25" cy="95" rx="26" ry="9" transform="rotate(-50 25 95)"/><ellipse cx="150" cy="95" rx="24" ry="8" transform="rotate(60 150 95)"/><ellipse cx="85" cy="130" rx="22" ry="8" transform="rotate(20 85 130)"/><ellipse cx="45" cy="165" rx="20" ry="7" transform="rotate(-30 45 165)"/></g>
+<g stroke="#657a5b" stroke-width="1.5" fill="none"><path d="M0 70C50 60 90 90 130 150M70 0C80 40 120 70 175 80M0 150C30 140 50 150 70 185"/></g>
+<g fill="#91a782"><ellipse cx="95" cy="30" rx="26" ry="9" transform="rotate(35 95 30)"/><ellipse cx="25" cy="95" rx="26" ry="9" transform="rotate(-50 25 95)"/><ellipse cx="150" cy="95" rx="24" ry="8" transform="rotate(60 150 95)"/><ellipse cx="85" cy="130" rx="22" ry="8" transform="rotate(20 85 130)"/><ellipse cx="45" cy="165" rx="20" ry="7" transform="rotate(-30 45 165)"/></g>
 <use href="#rose" x="10" y="10" width="105" height="105"/><use href="#rose" x="105" y="0" width="62" height="62"/><use href="#rose" x="0" y="105" width="62" height="62"/>
 <use href="#bud" x="130" y="55" width="22" height="22"/><use href="#bud" x="62" y="100" width="18" height="18"/><use href="#bud" x="170" y="20" width="18" height="18"/><use href="#bud" x="20" y="165" width="18" height="18"/><use href="#bud" x="95" y="145" width="16" height="16"/>
 </symbol>
-<symbol id="cap" viewBox="0 0 100 80"><path d="M50 8L98 30L50 52L2 30Z" fill="currentColor"/><path d="M24 42V60C24 68 76 68 76 60V42L50 55Z" fill="currentColor" opacity=".9"/><path d="M92 33V62" stroke="currentColor" stroke-width="3"/><circle cx="92" cy="66" r="4" fill="currentColor"/></symbol>
+<symbol id="cap" viewBox="0 0 100 80">
+<g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 27 Q5 25 9 23 L47 7 Q50 6 53 7 L91 23 Q95 25 91 28 L53 45 Q50 47 47 45 Z"/>
+<path d="M25 36 V54 Q25 57 29 59 Q50 69 71 59 Q75 57 75 54 V36"/>
+<path d="M50 25 Q70 26 88 30 V55"/>
+<path d="M88 55 Q83 57 84 62 L82 72 Q88 76 94 72 L92 62 Q93 57 88 55 Z"/>
+</g></symbol>
 </defs></svg>
 <main>
 <section class="screen welcome" aria-label="ظرف الدعوة">
@@ -101,31 +125,47 @@ button,a{font:inherit}
 <article class="paper">
 <svg class="fl tl" viewBox="0 0 200 200"><use href="#corner"/></svg><svg class="fl tr" viewBox="0 0 200 200"><use href="#corner"/></svg>
 <svg class="fl bl" viewBox="0 0 200 200"><use href="#corner"/></svg><svg class="fl br" viewBox="0 0 200 200"><use href="#corner"/></svg>
-<div class="poem" aria-label="أبيات شعرية"><p>اليَوْمَ يَوْمُ سُرُورٍ يَوْمُ أَفْرَاحِ</p><p>كَالبُرْءِ تَجْرِي بِأَجْسَامٍ وَأَرْوَاحِ</p><p>قُمْ وَاسْقِنِي بِالتَّهَانِي مِنْ طِلْعِ فَرَحِ</p></div>
-<div class="orn">❦</div>
-<p class="intro">بِقُلُوبٍ تَغْمُرُهَا السَّعَادَة<br>أَتَشَرَّفُ بِدَعْوَتِكُمْ لِحُضُورِ حَفْلِ تَخَرُّجِي</p>
-<div class="nameRow"><svg viewBox="0 0 100 80" aria-hidden="true"><use href="#cap"/></svg><h1 class="name">ديمة</h1></div>
+<div class="poem" aria-label="أبيات شعرية"><p>اليَوْمَ يَوْمُ سُرُورٍ يَوْمُ أَفْرَاحِ</p><p>كَالبُرْءِ تَجْرِي بِأَجْسَامٍ وَأَرْوَاحِ</p><p>قُمْ وَاسْقِنِي بِالتَّهَانِي مِنْ طِلَى فَرَحٍ</p></div>
+
+<div class="gold-divider" aria-hidden="true">
+<svg viewBox="0 0 320 40" xmlns="http://www.w3.org/2000/svg" role="presentation">
+<g fill="none" stroke="#b69a58" stroke-width="1.65" stroke-linecap="round">
+<path d="M8 20H117 M203 20H312" stroke-width="1" opacity=".78"/>
+<path d="M117 20c11 0 11-13 0-13-7 0-8 8-3 9M203 20c-11 0-11-13 0-13 7 0 8 8 3 9"/>
+<path d="M124 20c11-1 11 12 1 12-6 0-7-7-2-9M196 20c-11-1-11 12-1 12 6 0 7-7 2-9"/>
+<path d="M136 20c7-10 13-10 24 0 11-10 17-10 24 0M136 20c7 10 13 10 24 0 11 10 17 10 24 0"/>
+<path d="M160 5v30M153 12l7-9 7 9M153 28l7 9 7-9"/>
+</g><path d="M160 13l7 7-7 7-7-7z" fill="#b69a58"/><circle cx="160" cy="20" r="2" fill="#f6f0e4"/>
+</svg></div>
+<p class="intro">بِقُلُوبٍ تَغْمُرُهَا السَّعَادَة<br>أَتَشَرَّفُ بِدَعْوَتِكُمْ لِحُضُورِ حَفْلِ تَخَرُّجِ ابْنَتِي</p>
+<div class="nameRow"><h1 class="name">ديمة</h1></div>
 <p class="blessing">وَذَلِكَ بِمَشِيئَةِ اللَّهِ تَعَالَى</p>
 <div class="photo" id="photoWrap"><div id="portrait" role="img" aria-label="صورة ديمة"></div></div>
 <div class="info">
-<div class="col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 14h2M12 14h2M16 14h2M8 17h2M12 17h2"/></svg>يوم الثلاثاء<br>١٣ أكتوبر ٢٠٢٦</div>
+<div class="col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 14h2M12 14h2M16 14h2M8 17h2M12 17h2"/></svg>الثلاثاء<br>13 أكتوبر 2026</div>
 <div class="col"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.500a2.500 2.500 0 0 1 0 5z"/></svg><span id="venue">نادي الضباط<br>إربد</span></div>
-<div class="col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>من الساعة<br>٥:٠٠ إلى ٧:٠٠ مساءً</div>
+<div class="col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span dir="ltr" style="display:inline-block;white-space:nowrap;font-size:clamp(12px,3.4vw,16px)">5:00-7:00</span><br>مساءً</div>
 </div>
 <div class="actions"><a class="btn" id="rsvp" target="_blank" rel="noopener noreferrer">تأكيد الحضور عبر واتساب 💌</a></div>
 <button class="back" id="closeBtn">العودة للظرف</button>
 </article>
 </section>
 </main>
+
 <script>
 /* عدّلي هذه القيم */
-const config={date:'2026-10-13',start:'17:00',end:'19:00',venue:'نادي الضباط – إربد',whatsappNumber:'962791310774',photoUrl:''};
+const config={date:'2026-10-13',start:'17:00',end:'19:00',venue:'نادي الضباط – إربد',whatsappNumber:'962797245282',photoUrl:''};
 const body=document.body,openBtn=document.getElementById('openBtn'),details=document.getElementById('details');
 openBtn.addEventListener('click',()=>{openBtn.classList.add('is-opening');setTimeout(()=>{body.classList.add('open');details.inert=false;},750)});
 document.getElementById('closeBtn').addEventListener('click',()=>{body.classList.remove('open');details.inert=true;setTimeout(()=>openBtn.classList.remove('is-opening'),850)});
 if(config.photoUrl){document.getElementById('photoWrap').style.display='block';document.getElementById('portrait').style.backgroundImage='url("'+config.photoUrl.replace(/"/g,'')+'")'}
-const message='مرحباً ديمة! وصلتني دعوة تخرّجك 🎓🤍 وبأكد حضوري إن شاء الله.';
-document.getElementById('rsvp').href='https://wa.me/'+config.whatsappNumber.replace(/\D/g,'')+'?text='+encodeURIComponent(message);
+// Build the WhatsApp link with UTF-8 percent encoding, including both emojis.
+const message = 'مرحباً صفاء 🪻 وصلتني دعوة حفل تخرج ديمة، وبأكد حضوري إن شاء الله 💜';
+const whatsappNumber = config.whatsappNumber.replace(/\D/g, '');
+const whatsappLink = 'https://api.whatsapp.com/send?phone=' + whatsappNumber + '&text=' + encodeURIComponent(message);
+const rsvp = document.getElementById('rsvp');
+rsvp.setAttribute('href', whatsappLink);
+
 </script>
 </body>
 </html>
